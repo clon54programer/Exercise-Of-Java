@@ -13,6 +13,7 @@ public class Autificador {
             String Password = input.nextLine();
 
             if(Password.equals(Contrasena)){
+                // eguals es metodo si ve si otro objeto es igual al otro
                 System.out.println("Enhorabuena");
                 break;
             }if (i == 3) {

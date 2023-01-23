@@ -43,3 +43,35 @@ Scanner input = new Scanner(System.in);
         } while (number >= 0);
         System.out.println("termino el bucle");
 ```
+## cuarto ejercio 8:00 22/01/2023
+
+en este problema creanos una contraseño donde tienes tres intentos para dar la correcta sino la tienes en tus tres intentos se acaba el programa
+
+```java
+//aqui creare un programa que pida una contaseña y tienes tres intentos
+
+        Scanner input = new Scanner(System.in);
+        final String Contrasena = "12345";
+
+        for(int i = 1; i <= 3;i++){
+            
+            System.out.println("por favor cual es su contraseña");
+            String Password = input.nextLine();
+
+            if(Password.equals(Contrasena)){
+                // eguals es metodo si ve si otro objeto es igual al otro
+                System.out.println("Enhorabuena");
+                break;
+            }if (i == 3) {
+                System.out.println("usted no se sabe su contraseña");   
+            } 
+            else{
+                System.out.println("tiene otro intento, este es su intento numero "+i);
+            }
+        }
+```
+___
+
+# Nueva informacion
+
+> el metodo equals ve si un objeto es igual a otro objeto.
