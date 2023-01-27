@@ -23,32 +23,5 @@ public class Autificador {
                 System.out.println("tiene otro intento, este es su intento numero "+i);
             }
         }
-
-        //autificador pero while
-
-        System.out.println("coloque si, si se va logiar");
-        String option = input.nextLine();
-
-        while(option == "si"){
-            int a = 1;
-
-            String password = input.nextLine();
-
-            //la logica
-            if(password.equals(Contrasena)){
-                System.out.println("Enhorabuena, se a logiado");
-                break;
-            }if (a == 3) {
-                System.out.println("Usted no se sabe la contraseña");
-            } else {
-                System.out.println("tiene otro intento, es es un intento numero "+a);
-            }
-
-
-
-            a++;
-        }
-
-    
     }
 }
