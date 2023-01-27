@@ -72,6 +72,31 @@ en este problema creanos una contraseño donde tienes tres intentos para dar la 
 ```
 ___
 
+### ahora pero con while 
+```java
+ //ahora con while 
+
+        int a = 1;
+        boolean master = true;
+        System.out.println("por favor coloque otra vez la contraseña");
+
+        while(master){
+            String Password = input.nextLine();
+
+            if(Password.equals(Contrasena)){
+                // eguals es metodo si ve si otro objeto es igual al otro
+                System.out.println("Enhorabuena");
+                break;
+            }if (a == 3) {
+                System.out.println("usted no se sabe su contraseña");   
+            } 
+            else{
+                System.out.println("tiene otro intento, este es su intento numero "+a);
+            }
+            a++;
+        }
+```
+
 # Nueva informacion
 
 > el metodo equals ve si un objeto es igual a otro objeto.
