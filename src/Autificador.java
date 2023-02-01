@@ -44,6 +44,27 @@ public class Autificador {
             }
             a++;
         }
-        
+        //ahora con do while
+        String password;
+        int b = 1;
+        do {
+             System.out.println("deme la contraseña");
+            password = input.nextLine();
+            //logica
+            if(password.equals(Contrasena)){
+                break;
+            }
+
+            if(b == 3){
+                System.out.println("Usted no se sabe la contraseña");
+                break;
+            }else{
+                System.out.println("tiene otro intento, este es su intento numero "+b);
+            }
+
+
+            b++;
+        } while (password.equals(Contrasena));
+        System.out.println("Enhorabuena");
     }
 }
